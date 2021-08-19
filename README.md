@@ -1,5 +1,5 @@
 ## Setup
-1. Take a pull from git repo
+1. Take a pull from git repo: https://github.com/DevanshiShah29/Form-builder.git
 2. Execute command `npm install` to add node modules(Both for project and for backend -inside src folder)
 3. Setup is now ready you can open it in any code editor.
 
