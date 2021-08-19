@@ -197,7 +197,7 @@ const QuestionForm = () => {
                             disabled control={<input className="options_type" type={ques.questionType} color="primary" required={ques.type} />}
                             label={<Typography className="options_text">{ques.options[j].optionText}</Typography>} /> :
                           <FormControlLabel className="options_label"
-                            disabled control={<input className="options_type text" type={ques.questionType} color="primary" placeholder="paragraph" required={ques.type} />}
+                            disabled control={<input className="options_type text" type={ques.questionType} color="primary" placeholder="Text" required={ques.type} />}
                             label="" />
                         }
                       </div>
@@ -229,8 +229,8 @@ const QuestionForm = () => {
                       <div >
                         {
                           (ques.questionType !== "text") ?
-                            <input type="text" className="text_input" placeholder="option" value={ques.options[j].optionText} onChange={(e) => { handleOptionValue(e.target.value, i, j) }}></input> :
-                            <input type="text" className="text_input" placeholder="paragraph" value="" onChange={(e) => { handleOptionValue(e.target.value, i, j) }}></input>
+                            <input type="text" className="text_input" placeholder="Option" value={ques.options[j].optionText} onChange={(e) => { handleOptionValue(e.target.value, i, j) }}></input> :
+                            <input type="text" className="text_input" placeholder="Paragraph" value="" onChange={(e) => { handleOptionValue(e.target.value, i, j) }}></input>
                         }
 
                       </div>
