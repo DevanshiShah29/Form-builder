@@ -43,9 +43,9 @@ app.get("/documents/:doc_id", (req, res) => {
   );
   fs.readFile(`files/${req.params.doc_id}.json`, (err, data) => {
     if (err) throw err;
-    let data = JSON.parse(data);
+    let formData = JSON.parse(data);
     //console.log(req.params.doc_id);
-    res.send(data);
+    res.send(formData);
   });
 });
 
